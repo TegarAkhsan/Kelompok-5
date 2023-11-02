@@ -105,3 +105,12 @@ if kartu == "y":
        pembayaran = int(input("Masukan nominal uang pembayaran anda: "))
        uang_kembalian = pembayaran - int(harga_diskon)
        print(f"Uang kembalian anda adalah: Rp.{uang_kembalian}")
+ else:
+        print("Kode yang anda masukan salah")
+else:
+    print("Baik, kita lanjut")
+    pembayaran = int(input("Masukan nominal uang pembayaran anda: "))
+    uang_kembalian = pembayaran - total_harga
+    print(f"Uang kembalian anda adalah: Rp.{uang_kembalian}")
+
+print("Terimakasih telah memilih kami:)")
