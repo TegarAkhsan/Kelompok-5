@@ -68,3 +68,5 @@ if pizza in range(1, 5):
             harga_keju = 0
     elif ukuran == "l":
         harga_ukuran = 132728
+        if crust == "a":
+            harga_crust = 0
