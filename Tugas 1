@@ -42,3 +42,29 @@ if pizza in range(1, 5):
             harga_crust = 11818
         else:
             print("Kode crust yang anda masukan salah")
+
+        if extra_keju == "y":
+            harga_keju = 13636
+        else:
+            harga_keju = 0
+    elif ukuran == "m":
+        harga_ukuran = 100910
+        if crust == "a":
+            harga_crust = 0
+        elif crust == "b":
+            harga_crust = 20000
+        elif crust == "c":
+            harga_crust = 16363
+        elif crust == "d":
+            harga_crust = 22727
+        elif crust == "e":
+            harga_crust = 20000
+        else:
+            print("Kode crust yang anda masukan salah")
+
+        if extra_keju == "y":
+            harga_keju = 16364
+        else:
+            harga_keju = 0
+    elif ukuran == "l":
+        harga_ukuran = 132728
