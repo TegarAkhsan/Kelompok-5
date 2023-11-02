@@ -92,3 +92,16 @@ else:
 
 total_harga = harga_ukuran + harga_crust + harga_keju
 print(f"Total pesanan pizza anda adalah: Rp.{total_harga}")
+
+print("Jika anda punya kartu member anda akan mendapatkan diskon 9%")
+kartu = input("Apakah anda mempunyai kartu? y/n: ").lower()
+
+if kartu == "y":
+    kode_kartu = int(input("Silahkan masukan kode kartu: "))
+    if kode_kartu in range(22, 55):
+       diskon = total_harga * 0.09
+       harga_diskon = total_harga - diskon
+       print(f"Total pesanan pizza anda setelah diskon adalah: Rp.{int(harga_diskon)}")
+       pembayaran = int(input("Masukan nominal uang pembayaran anda: "))
+       uang_kembalian = pembayaran - int(harga_diskon)
+       print(f"Uang kembalian anda adalah: Rp.{uang_kembalian}")
