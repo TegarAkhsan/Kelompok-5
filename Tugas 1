@@ -70,3 +70,25 @@ if pizza in range(1, 5):
         harga_ukuran = 132728
         if crust == "a":
             harga_crust = 0
+elif crust == "b":
+            harga_crust = 27272
+        elif crust == "c":
+            harga_crust = 22727
+        elif crust == "d":
+            harga_crust = 31818
+        elif crust == "e":
+            harga_crust = 27272
+        else:
+            print("Kode crust yang anda masukan salah")
+
+        if extra_keju == "y":
+            harga_keju = 19091
+        else:
+            harga_keju = 0
+    else:
+        print("Kode ukuran yang anda masukan salah")
+else:
+    print("Kode pizza yang anda masukan salah")
+
+total_harga = harga_ukuran + harga_crust + harga_keju
+print(f"Total pesanan pizza anda adalah: Rp.{total_harga}")
