@@ -1,1 +1,44 @@
+print("""
+Selamat Datang di Pizza HUT
 
+Silahkan pilih varian pizza anda:)      
+Varian Pizza:   Frankfurter BBQ         [1]
+                Meat Monsta             [2]
+                Super Supreme           [3]
+                Super Supreme Chicken   [4]""")
+pizza = int(input("Masukan kode pizza: "))
+
+print("""
+Silahkan pilih varian ukuran anda:)
+Varian Ukuran:  Persona [S]
+                Reguler [M]
+                Large   [L]""")
+ukuran = input("Masukan kode ukuran: ").lower()
+
+print("""
+Silahkan pilih varian crust anda:)
+Varian Crust:   Pan                     [A]
+                Stuffed Crust Chesee    [B]
+                Stuffed Crust Sausage   [C]
+                Chessy Bites            [D]
+                Crown Crust             [E]""")
+crust = input("Masukan kode crust: ").lower()
+
+print("Apakah anda ingin extra chesee? y/n")
+extra_keju = input("Masukan kode extra chesee: ").lower()
+
+if pizza in range(1, 5):
+    if ukuran == "s":
+        harga_ukuran = 43637
+        if crust == "a":
+            harga_crust = 0
+        elif crust == "b":
+            harga_crust = 11818
+        elif crust == "c":
+            harga_crust = 9091
+        elif crust == "d":
+            harga_crust = 13636
+        elif crust == "e":
+            harga_crust = 11818
+        else:
+            print("Kode crust yang anda masukan salah")
