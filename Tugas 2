@@ -46,4 +46,27 @@ while not at_goal():
         jump()
     else:
         move()
-        
+
+def putar_balik():
+    turn_left()
+    turn_left()
+
+#MAZE
+def balik_kanan():
+    turn_left()
+    turn_left()
+    turn_left()
+    
+while not at_goal():
+    if front_is_clear():
+        move()
+    elif right_is_clear():
+        balik_kanan()
+        move()
+    elif wall_in_front():
+        balik_kanan()
+        if wall_in_front():
+            putar_balik()
+        elif wall_in_front():
+            turn_left()
+            move()
